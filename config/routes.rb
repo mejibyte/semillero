@@ -1,5 +1,7 @@
 Semillero::Application.routes.draw do
   root :to => "static_pages#home"
+  
+  match 'curriculum' => "static_pages#curriculum", :as => :curriculum
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
